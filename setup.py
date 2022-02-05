@@ -8,6 +8,9 @@ version = re.search(r'^version\s*=\s*"(.*?)"', pyproject, flags=re.MULTILINE).gr
 description = re.search(r'^description\s*=\s*"(.*?)"', pyproject, flags=re.MULTILINE).group(1)
 long_description = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
+package_dir = \
+{'': 'src'}
+
 packages = \
 ['xla']
 
@@ -23,7 +26,8 @@ setup_kwargs = {
     'author_email': 'shawnpresser@gmail.com',
     'maintainer': 'None',
     'maintainer_email': 'None',
-    'url': 'None',
+    'url': 'https://github.com/shawwn/xla',
+    'package_dir': package_dir,
     'packages': packages,
     'package_data': package_data,
     'python_requires': '>=3.8,<4.0',
