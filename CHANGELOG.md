@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.0 (2022-02-05)
+### Feature
+* Add xlaz.__version__ ([`4a3475e`](https://github.com/shawwn/xlaz/commit/4a3475ef987884eb2d47baf61d171c4e01ca5365))
+
 ## v0.6.0 (2022-02-05)
 ### Feature
 * Add xlaz.hlo_lexer ([`f614fe6`](https://github.com/shawwn/xlaz/commit/f614fe6d006f23a58957489c4fd90671dd19fb07))
