@@ -66,13 +66,16 @@ jobs:
         curl -sSL https://install.python-poetry.org | POETRY_PREVIEW=1 python3 -
     # Step 5. Use PSR to make release
     - name: Python Semantic Release
+      id: semantic-release
       run: |
           pip install python-semantic-release
           git config user.name github-actions
           git config user.email github-actions@github.com
+          echo "::set-output name=print-version::$(semantic-release print-version --noop)"
           semantic-release publish
     # Step 6. Publish to TestPyPI
     - uses: pypa/gh-action-pypi-publish@release/v1
+      if: steps.semantic-release.outputs.print-version
       with:
         user: __token__
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
@@ -80,6 +83,7 @@ jobs:
         skip_existing: true
     # Step 7. Test install from TestPyPI
     - name: Test install from TestPyPI
+      if: steps.semantic-release.outputs.print-version
       run: |
           pip install \
           --index-url https://test.pypi.org/simple/ \
@@ -87,6 +91,7 @@ jobs:
           xlaz
     # Step 8. Publish to PyPI
     - uses: pypa/gh-action-pypi-publish@release/v1
+      if: steps.semantic-release.outputs.print-version
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
