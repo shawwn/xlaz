@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xlaz"
-version = "0.2.0"
+version = "0.3.0"
 homepage = "https://github.com/shawwn/xla"
 description = "XLA utilities in pure Python"
 authors = ["Shawn Presser <shawnpresser@gmail.com>"]
