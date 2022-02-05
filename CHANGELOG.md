@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.0 (2022-02-05)
+### Feature
+* Add xlaz.hlo_lexer ([`f614fe6`](https://github.com/shawwn/xlaz/commit/f614fe6d006f23a58957489c4fd90671dd19fb07))
+
 ## v0.5.0 (2022-02-05)
 ### Feature
 * Add protobuf modules xlaz.pb.tensorflow.compiler.xla.{xla_pb2,xla_data.pb2,service.hlo_pb2} ([`6b1fbac`](https://github.com/shawwn/xlaz/commit/6b1fbac2f85500e9e931ae6b6fe7de7b2b72534f))
