@@ -20,7 +20,7 @@ package_data = \
 {'': ['*']}
 
 install_requires = \
-['tensorflow-checkpoint-reader>=0.1.0']
+['tensorflow-checkpoint-reader>=0.1.2']
 
 setup_kwargs = {
     'package_dir': package_dir,
