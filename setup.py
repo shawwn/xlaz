@@ -11,7 +11,10 @@ package_dir = \
 {'': 'src'}
 
 packages = \
-['xlaz']
+['xlaz',
+ 'xlaz.pb',
+ 'xlaz.pb.tensorflow.compiler.xla',
+ 'xlaz.pb.tensorflow.compiler.xla.service']
 
 package_data = \
 {'': ['*']}
