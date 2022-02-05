@@ -38,7 +38,7 @@ package_dir = \
 {'': 'src'}
 
 packages = \
-['xla']
+['xlaz']
 
 package_data = \
 {'': ['*']}

@@ -1,5 +1,5 @@
 import unittest
-import xla
+import xlaz
 
 class XlaTestCase(unittest.TestCase):
   def test_basic(self):
