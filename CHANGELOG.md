@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2022-02-05)
+### Feature
+* Add github workflow to do automatic releases ([`095f812`](https://github.com/shawwn/xlaz/commit/095f8127c3e97c8092c69f9cf938da741f0358c8))
+
 ## v0.3.0 (2022-02-04)
 ### Feature
 * Rename project to xlaz ([`fba4756`](https://github.com/shawwn/xla/commit/fba47569bc137687022e98784e32e51e4dd047f1))
