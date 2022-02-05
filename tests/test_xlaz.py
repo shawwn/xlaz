@@ -1,8 +1,8 @@
 import unittest
+
 import xlaz
 import xlaz.hlo_lexer
-from xlaz.pb.tensorflow.compiler.xla import xla_pb2
-from xlaz.pb.tensorflow.compiler.xla import xla_data_pb2
+from xlaz.pb.tensorflow.compiler.xla import xla_data_pb2, xla_pb2
 from xlaz.pb.tensorflow.compiler.xla.service import hlo_pb2
 
 class XlaTestCase(unittest.TestCase):

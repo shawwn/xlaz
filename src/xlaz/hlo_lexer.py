@@ -1,12 +1,13 @@
-from enum import Enum, auto
-from copy import copy, deepcopy
-from xlaz.pb.tensorflow.compiler.xla import xla_data_pb2 as xd
-from dataclasses import dataclass
-from typing import Union
-from xlaz import primitive_util
 import re
-from functools import lru_cache
 import sys
+from copy import copy, deepcopy
+from dataclasses import dataclass
+from enum import auto, Enum
+from functools import lru_cache
+from typing import Union
+
+from xlaz import primitive_util
+from xlaz.pb.tensorflow.compiler.xla import xla_data_pb2 as xd
 
 @lru_cache
 def LazyRE2(pattern):

@@ -1,5 +1,6 @@
-from xlaz.pb.tensorflow.compiler.xla import xla_data_pb2 as xd
 from functools import lru_cache
+
+from xlaz.pb.tensorflow.compiler.xla import xla_data_pb2 as xd
 
 @lru_cache
 def GetPrimitiveTypeStringMap():
