@@ -3,7 +3,9 @@ from setuptools import setup
 import re
 import os
 
-version = re.search(r'^version\s*=\s*"(.*?)"', open(os.path.join(os.path.dirname(__file__), 'pyproject.toml')).read(), flags=re.MULTILINE).group(1)
+pyproject = open(os.path.join(os.path.dirname(__file__), 'pyproject.toml')).read()
+version = re.search(r'^version\s*=\s*"(.*?)"', pyproject, flags=re.MULTILINE).group(1)
+description = re.search(r'^description\s*=\s*"(.*?)"', pyproject, flags=re.MULTILINE).group(1)
 long_description = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 packages = \
@@ -15,7 +17,7 @@ package_data = \
 setup_kwargs = {
     'name': 'xla',
     'version': version,
-    'description': '',
+    'description': description,
     'long_description': long_description,
     'author': 'Shawn Presser',
     'author_email': 'shawnpresser@gmail.com',

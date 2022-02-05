@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "xla"
 version = "0.1.0"
-description = ""
+homepage = "https://github.com/shawwn/xla"
+description = "XLA utilities in pure Python"
 authors = ["Shawn Presser <shawnpresser@gmail.com>"]
+license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
