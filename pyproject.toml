@@ -10,6 +10,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+python-semantic-release = "^7.24.0"
 
 [build-system]
 requires = ["poetry-core"]
