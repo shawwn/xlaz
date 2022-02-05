@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2022-02-05)
+### Feature
+* Add protobuf modules xlaz.pb.tensorflow.compiler.xla.{xla_pb2,xla_data.pb2,service.hlo_pb2} ([`6b1fbac`](https://github.com/shawwn/xlaz/commit/6b1fbac2f85500e9e931ae6b6fe7de7b2b72534f))
+
+### Fix
+* Upgrade to tensorflow-checkpoint-reader>=0.1.2 for protobuf dependency ([`d99d007`](https://github.com/shawwn/xlaz/commit/d99d007f548abb97b9dbf9dab489f5689c525add))
+
 ## v0.4.0 (2022-02-05)
 ### Feature
 * Add github workflow to do automatic releases ([`095f812`](https://github.com/shawwn/xlaz/commit/095f8127c3e97c8092c69f9cf938da741f0358c8))
